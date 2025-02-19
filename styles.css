@@ -1,0 +1,53 @@
+
+body {Font-size: 15px;
+font-family: Poppins, sans-serif;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+color: hsl(212, 6%, 44%);}
+
+div {padding: 0px 10px;
+}
+
+h1 {color:hsl(234, 12%, 34%) ;
+font-weight: 200;
+font-size: 1.4rem;}
+span {font-weight: 600;}
+h2 {color:hsl(234, 12%, 34%) ;
+font-weight: 400;
+margin-bottom: 2px;}
+p {margin-bottom: 2px;}
+
+.box__supervisor {border-top: 5px solid hsl(180, 62%, 55%);
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);;
+display: flex;
+flex-direction: column;
+align-items: end;
+padding: 10px 25px;}
+
+.box__team-builder {border-top: 5px solid hsl(0, 78%, 62%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: end;}
+    
+.box__karma {border-top: 5px solid hsl(34, 97%, 64%);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        align-items: end;}
+.box__calculator {border-top: 5px solid hsl(212, 86%, 64%);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+            align-items: end;}       
+.box__img {
+    padding: 20px;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

@@ -1,15 +1,11 @@
 body {
     Font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     color: hsl(212, 6%, 44%);
-}
-
-div {
-    padding: 0px 10px;
 }
 
 h1 {
@@ -30,6 +26,18 @@ h2 {
 
 p {
     margin-bottom: 2px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main-center {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .box__supervisor,
@@ -72,4 +80,30 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+    .header {
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box__supervisor,
+    .box__team-builder,
+    .box__karma,
+    .box__calculator {
+        max-width: 22vw;
+        max-height: 25vh;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
 }

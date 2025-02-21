@@ -4,6 +4,7 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
     color: hsl(212, 6%, 44%);
 }
@@ -82,10 +83,16 @@ p {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 900px) {
+/* Cuando empieza a crecer la cosa ponemos en el texto en el centro para que quede bien */
+@media (min-width: 600px) {
     .header {
         text-align: center;
     }
+}
+
+/* He ajustado el min-width */
+@media (min-width: 1200px) {
+
 
     .main {
         display: flex;
@@ -95,12 +102,27 @@ p {
         align-items: center;
     }
 
+    .main-center {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: space-between;
+        flex-shrink: 0; /* No te hagas más pequeño nunca */
+
+    }
+
+
     .box__supervisor,
     .box__team-builder,
     .box__karma,
     .box__calculator {
-        max-width: 22vw;
-        max-height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra elementos */
+        max-width: 300px; /* Como mucho las tarjetas crecen a lo ancho esta medida */
+        min-height: 10vw; /* Evita que algunas sean más pequeñas */
+        flex-grow: 1; /* Hace que crezcan equitativamente */
+        flex-shrink: 0; /* No te hagas más pequeño nunca */
     }
 
     h2 {
